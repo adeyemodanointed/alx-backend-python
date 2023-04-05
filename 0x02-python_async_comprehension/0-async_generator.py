@@ -2,10 +2,9 @@
 """Async Generator"""
 from random import uniform
 import asyncio
-from typing import List
 
 
-async def async_generator() -> List[float]:
+async def async_generator() -> float:
     """coroutine will loop 10 times, each time asynchronously wait """
     for i in range(10):
         await asyncio.sleep(1)
